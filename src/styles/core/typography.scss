@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+  font-family: var(--header-font);
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+
+  &.primary {
+    color: var(--primary-color);
+  }
+}
+
+h1, .h1 {
+  font-size: 80px;
+
+  @media (max-width: 1000px) and (min-width: 741px) {
+  }
+
+  @media (max-width: 740px) {
+  }
+}
+
+h2, .h2 {
+  font-size: 64px;
+
+  @media (max-width: 1000px) and (min-width: 741px) {
+  }
+
+  @media (max-width: 740px) {
+  }
+}
+
+h3, .h3 {
+  font-size: 26px;
+
+  @media (max-width: 1000px) and (min-width: 741px) {
+  }
+
+  @media (max-width: 740px) {
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+a:not(.button) {
+  color: inherit;
+}
+
+a:not(.button):not(.link) {
+  text-decoration: none;
+}

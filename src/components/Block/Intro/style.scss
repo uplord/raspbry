@@ -1,0 +1,15 @@
+.block-intro {
+
+  .image-wrap {
+
+    img {
+      width: 100%;
+      border-radius: 24px;
+    }
+  }
+
+  a:not(.button):not(.link) {
+    color: var(--header-color);
+    text-decoration: underline;
+  }
+}

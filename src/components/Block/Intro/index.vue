@@ -1,0 +1,26 @@
+<template>
+  <div class="block block-intro alignwide">
+    <div class="image-wrap">
+      <Image :image="{ url: '/assets/images/Image.png' }" :title="'Alt'" />
+    </div>
+    <div class="text-wrap">
+      <div class="inner-container">
+        <h3>More than a studio, we’re your long-term ally.</h3>
+        <p>We specialize in human-centered design where technology serves humanity, not the other way around. This not only elevates your brand but also solves real-world problems.</p>
+        <p>We see ourselves as your long-term partner – working closely with you for true collaboration, from initial concept to final product. This way, we’re invested in your success.</p>
+        <p><a href="">Learn more about our studio</a></p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+
+const props = defineProps([])
+
+onMounted(() => {})
+</script>
+
+<style lang="scss">
+@import "style";
+</style>
