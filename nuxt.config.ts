@@ -3,11 +3,11 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: "/nuxt/",
     head: {
+      title: 'Raspbry',
       link: [,
         {
           rel: 'icon',
-          type: 'image/x-ico',
-          href: '/favicon.ico'
+          href: '/favicon.png'
         },
         {
           rel: 'preload',
@@ -23,17 +23,12 @@ export default defineNuxtConfig({
           type: 'font/woff',
           crossorigin: 'anonymous'
         }
-      ]
+      ],
+      htmlAttrs: {
+        lang: "en"
+      },
     }
-    // head: {
-    //   script: [
-    //     {
-    //       src: "/scripts/script.js"
-    //     }
-    //   ]
-    // }
   },
-  compatibilityDate: '2024-04-03',
   css: [
     '~/styles/main.scss',
   ],
