@@ -3,7 +3,12 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: "/nuxt/",
     head: {
-      link: [
+      link: [,
+        {
+          rel: 'icon',
+          type: 'image/x-ico',
+          href: '/favicon.ico'
+        },
         {
           rel: 'preload',
           href: '/assets/fonts/ppneuemontreal-medium.woff2',
