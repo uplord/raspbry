@@ -13,7 +13,7 @@
       <div class="navigation">
         <ul>
           <li>
-            <NuxtLink to="mailto:michael@uplord.co.uk">Lets talk</NuxtLink>
+            <NuxtLink to="mailto:dan@raspbry.design">Lets talk</NuxtLink>
           </li>
         </ul>
       </div>
