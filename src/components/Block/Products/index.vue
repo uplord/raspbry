@@ -6,11 +6,11 @@
     <div class="products">
       <div class="product">
         <div class="title">Product</div>
-        <div class="info">User Research & Testing, Interactive<br>Prototyping, Software Design,<br>Visual Design Systems, Mobile App Design</div>
+        <div class="info">User Research & Testing, Interactive Prototyping, Software Design, Visual Design Systems, Mobile App Design</div>
       </div>
       <div class="product">
         <div class="title">Product</div>
-        <div class="info">User Research & Testing, Interactive<br>Prototyping, Software Design,<br>Visual Design Systems, Mobile App Design</div>
+        <div class="info">User Research & Testing, Interactive Prototyping, Software Design, Visual Design Systems, Mobile App Design</div>
       </div>
     </div>
   </div>
