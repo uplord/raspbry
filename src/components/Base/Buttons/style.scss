@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
+  // justify-content: center;
+  justify-content: flex-start;
+  gap: 8px;
 
   @media (min-width: 641px) {
     justify-content: flex-start;

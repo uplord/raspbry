@@ -13,6 +13,8 @@
     format="webp"
     fit="outside"
     :alt="title"
+    :width="image.width"
+    :height="image.height"
   />
 </template>
 

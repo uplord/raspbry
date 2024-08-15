@@ -2,6 +2,24 @@
 export default defineNuxtConfig({
   app: {
     buildAssetsDir: "/nuxt/",
+    head: {
+      link: [
+        {
+          rel: 'preload',
+          href: '/assets/fonts/ppneuemontreal-medium.woff2',
+          as: 'font',
+          type: 'font/woff',
+          crossorigin: 'anonymous'
+        },
+        {
+          rel: 'preload',
+          href: '/assets/fonts/ppneuemontreal-bold.woff2',
+          as: 'font',
+          type: 'font/woff',
+          crossorigin: 'anonymous'
+        }
+      ]
+    }
     // head: {
     //   script: [
     //     {
@@ -17,9 +35,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   googleFonts: {
     families: {
-      "DM Sans": [400, 500, 600, 700]
+      "Gloock": [400]
     },
-    display: "swap"
+    display: "swap",
+    preload: true
   },
   modules: [
     "nuxt-icons",

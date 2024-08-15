@@ -43,8 +43,8 @@ section {
   padding-bottom: 32px;
 
   @media (min-width: 741px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   > .inner-container,
@@ -121,7 +121,8 @@ section {
 
   > * {
     width: 100%;
-    max-width: 100%;
+    // max-width: 100%;
+    max-width: 1032px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -226,4 +227,14 @@ section {
 
 .dark {
   color-scheme: dark;
+}
+
+.svg-wrap .nuxt-icon {
+  display: block;
+
+  svg {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }

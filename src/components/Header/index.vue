@@ -2,7 +2,9 @@
   <header class="header alignmax">
     <div class="container alignwide">
       <NuxtLink to="/" class="logo">
-        raspbry
+        <span class="svg-wrap">
+          <nuxt-icon name="logo" filled />
+        </span>
       </NuxtLink>
 
       <div class="navigation">

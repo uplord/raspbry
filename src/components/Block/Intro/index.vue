@@ -1,7 +1,7 @@
 <template>
   <div class="block block-intro alignwide">
     <div class="image-wrap">
-      <Image :image="{ url: '/assets/images/Image.png' }" :title="'Alt'" />
+      <Image :image="{ url: '/assets/images/Image.png', width: 1384, height: 778 }" :title="'Alt'" />
     </div>
     <div class="text-wrap">
       <div class="inner-container">

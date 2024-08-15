@@ -1,3 +1,25 @@
 .block-banner {
 
+  .inner-container {
+    // max-width: 1032px;
+    // margin: 0 auto;
+    gap: 48px;
+  }
+
+  h1 {
+
+    span {
+      font-family: var(--extra-font);
+      color: var(--secondary-color);
+    }
+  }
+
+  .button-group {
+    margin-bottom: 48px;
+  }
+
+  h4 {
+    max-width: 480px;
+    margin-left: 0;
+  }
 }
