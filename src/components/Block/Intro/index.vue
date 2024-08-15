@@ -1,5 +1,10 @@
 <template>
-  <div class="block block-intro alignwide">
+  <div class="block block-intro alignwide"
+    :class="{
+      'animate js_section': animate == 'true',
+      visible: visible == true
+    }"
+  >
     <div class="image-wrap">
       <Image :image="{ url: '/assets/images/Image.png', width: 1384, height: 778 }" :title="'Alt'" />
     </div>
@@ -18,7 +23,10 @@
 
 <script setup>
 
-const props = defineProps([])
+const props = defineProps([
+  'animate',
+  'visible'
+])
 
 onMounted(() => {})
 </script>

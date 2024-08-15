@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     buildAssetsDir: "/nuxt/",
     head: {
-      title: 'Raspbry',
+      title: 'raspbry',
       link: [,
         {
           rel: 'icon',

@@ -1,5 +1,10 @@
 <template>
-  <div class="block block-banner alignwide">
+  <div class="block block-banner alignwide"
+    :class="{
+      'animate js_section': animate == 'true',
+      visible: visible == true
+    }"
+  >
     <div clas="slides">
       <div class="slide">
 
@@ -32,7 +37,10 @@
 
 <script setup>
 
-const props = defineProps([])
+const props = defineProps([
+  'animate',
+  'visible'
+])
 
 onMounted(() => {})
 </script>

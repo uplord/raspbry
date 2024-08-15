@@ -1,5 +1,10 @@
 <template>
-  <div class="block block-products alignwide">
+  <div class="block block-products alignwide"
+    :class="{
+      'animate js_section': animate == 'true',
+      visible: visible == true
+    }"
+  >
     <div class="text-wrap">
       <h2>At raspbry, we believe in a connected approach.</h2>
     </div>
@@ -18,7 +23,10 @@
 
 <script setup>
 
-const props = defineProps([])
+const props = defineProps([
+  'animate',
+  'visible'
+])
 
 onMounted(() => {})
 </script>

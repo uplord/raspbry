@@ -2,10 +2,22 @@
   <main>
     <section>
       <div class="inner-container">
-        <BlockBanner />
-        <BlockIntro />
-        <BlockProducts />
-        <BlockSection />
+        <BlockBanner
+          animate="true"
+          :visible="visible[0].visible"
+        />
+        <BlockIntro
+          animate="true"
+          :visible="visible[1].visible"
+        />
+        <BlockProducts
+          animate="true"
+          :visible="visible[2].visible"
+        />
+        <BlockSection
+          animate="true"
+          :visible="visible[3].visible"
+        />
         <!-- <component
           v-if="sections"
           v-for="(section, key) in sections"
@@ -15,7 +27,6 @@
           animate="true"
           :visible="visible[key].visible"
         /> -->
-
       </div>
     </section>
   </main>
@@ -41,7 +52,7 @@ const pageStore = usePageStore();
 
 // const config = useRuntimeConfig();
 
-// const loading = ref(false);
+const loading = ref(false);
 // const sections = ref([]);
 // const id = 1;
 
@@ -62,32 +73,32 @@ const pageStore = usePageStore();
 // }
 
 // sections.value = pageStore.page.attributes.sections
-// const visible = ref(Array.from({ length: sections.value.length }, () => ({ visible: false })))
+const visible = ref(Array.from({ length: 4}, () => ({ visible: false })))
 
 // const getComponent = (componentName) => componentMapping[componentName] || null;
 
-// onMounted(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry, index) => {
-//         if (entry.isIntersecting) {
-//           setTimeout(() => {
-//             loading.value = true
-//             visible.value[entry.target.index].visible = true
-//           }, index * 1200)
-//           observer.unobserve(entry.target)
-//         }
-//       })
-//     },
-//     {
-//       threshold: 0,
-//       rootMargin: "0px 0px -100px 0px"
-//     }
-//   )
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            loading.value = true
+            visible.value[entry.target.index].visible = true
+          }, index * 1200)
+          observer.unobserve(entry.target)
+        }
+      })
+    },
+    {
+      threshold: 0,
+      rootMargin: "0px 0px -100px 0px"
+    }
+  )
 
-//   document.querySelectorAll(".js_section").forEach(function (el, index) {
-//     el.index = index
-//     observer.observe(el)
-//   })
-// })
+  document.querySelectorAll(".js_section").forEach(function (el, index) {
+    el.index = index
+    observer.observe(el)
+  })
+})
 </script>
