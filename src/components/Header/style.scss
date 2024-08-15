@@ -60,22 +60,19 @@ header {
     font-weight: bold;
     margin-right: auto;
 
-    .m {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      font-size: 26px;
-      margin-right: 8px;
-      background: var(--primary-color);
-      color: #FFF;
-      border-radius: 20px;
-      letter-spacing: 1px;
+    .desktop-icon {
+
+      @media (max-width: 740px) {
+        display: none;
+      }
     }
 
-    .red {
-      color: var(--primary-color);
+    .mobile-icon {
+      display: none;
+
+      @media (max-width: 740px) {
+        display: block;
+      }
     }
   }
 
@@ -138,6 +135,11 @@ header {
         font-size: 18px;
         line-height: 21px;
         text-decoration: underline;
+
+        @media (max-width: 740px) {
+          margin: 29px 0;
+          font-size: 16px;
+        }
 
         &:hover,
         &:focus {

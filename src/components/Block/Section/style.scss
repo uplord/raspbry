@@ -2,11 +2,20 @@
   flex-direction: row;
   align-items: center;
 
+  @media (max-width: 740px) {
+    flex-direction: column;
+  }
+
   .inner-container {
     gap: 24px;
   }
   
   .image-wrap {
+    width: 100%;
+
+    @media (max-width: 1000px) and (min-width: 741px) {
+      width: 40%;
+    }
 
     img {
       width: 100%;
@@ -18,12 +27,20 @@
     width: 100%;
     max-width: 678px;
 
+    @media (max-width: 1000px) and (min-width: 741px) {
+      width: 60%;
+    }
+
     h2 {
       margin-bottom: 24px;
     }
 
     h3 {
       margin-top: 72px;
+
+      @media (max-width: 740px) {
+        margin-top: 24px;
+      }
     }
   }
 

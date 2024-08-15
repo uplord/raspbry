@@ -1,4 +1,9 @@
 .block-banner {
+  padding-top: 80px;
+
+  @media (max-width: 740px) {
+    padding-top: 96px;
+  }
 
   .inner-container {
     // max-width: 1032px;
@@ -16,6 +21,10 @@
 
   .button-group {
     margin-bottom: 48px;
+
+    @media (max-width: 740px) {
+      margin-bottom: 0;
+    }
   }
 
   h4 {

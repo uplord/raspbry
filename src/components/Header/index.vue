@@ -2,8 +2,11 @@
   <header class="header alignmax">
     <div class="container alignwide">
       <NuxtLink to="/" class="logo">
-        <span class="svg-wrap">
+        <span class="svg-wrap desktop-icon">
           <nuxt-icon name="logo" filled />
+        </span>
+        <span class="svg-wrap mobile-icon">
+          <nuxt-icon name="logo_mobile" filled />
         </span>
       </NuxtLink>
 

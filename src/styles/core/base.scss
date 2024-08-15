@@ -39,13 +39,8 @@ img {
 }
 
 section {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  @media (min-width: 741px) {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
+  padding-top: 0;
+  padding-bottom: 48px;
 
   > .inner-container,
   .block > .inner-container {
