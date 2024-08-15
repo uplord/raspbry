@@ -1,10 +1,12 @@
 .block-section {
   flex-direction: row;
   align-items: center;
+
+  .inner-container {
+    gap: 24px;
+  }
   
   .image-wrap {
-    width: 100%;
-    max-width: 508px;
 
     img {
       width: 100%;
@@ -13,7 +15,16 @@
   }
 
   .text-wrap {
+    width: 100%;
+    max-width: 678px;
 
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      margin-top: 72px;
+    }
   }
 
   a:not(.button):not(.link) {

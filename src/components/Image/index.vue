@@ -9,6 +9,7 @@
     :height="image.data.attributes.height"
   /> -->
   <NuxtImg
+    preload
     :src="image.url"
     format="webp"
     fit="outside"

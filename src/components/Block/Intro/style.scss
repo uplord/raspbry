@@ -1,10 +1,19 @@
 .block-intro {
+  margin-bottom: 48px;
 
   .image-wrap {
 
     img {
       width: 100%;
       border-radius: 24px;
+    }
+  }
+
+  .inner-container {
+
+    .inner-container > * {
+      max-width: 678px;
+      margin-right: 0;
     }
   }
 
