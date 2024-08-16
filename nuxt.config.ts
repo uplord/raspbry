@@ -48,6 +48,15 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
   ],
   image: {
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      "2xl": 1536
+    },
     provider: 'ipx',
     strapi: {
       baseURL: process.env.STRAPI_URL || 'http://localhost:1337'
