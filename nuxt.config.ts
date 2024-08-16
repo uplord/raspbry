@@ -49,13 +49,9 @@ export default defineNuxtConfig({
   ],
   image: {
     screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-      "2xl": 1536
+      mobile: 320,
+      tablet: 640,
+      desktop: 1024,
     },
     provider: 'ipx',
     strapi: {

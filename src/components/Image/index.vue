@@ -16,6 +16,10 @@
     :alt="title"
     :width="image.width"
     :height="image.height"
+    :sizes="{
+      mobile: '320px',
+      desktop: '1024px',
+    }"
   />
 </template>
 
