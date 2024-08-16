@@ -73,7 +73,7 @@ const loading = ref(false);
 // }
 
 // sections.value = pageStore.page.attributes.sections
-const visible = ref(Array.from({ length: 4}, () => ({ visible: false })))
+const visible = ref(Array.from({ length: 4}, () => ({ visible: true })))
 
 // const getComponent = (componentName) => componentMapping[componentName] || null;
 
