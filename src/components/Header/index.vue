@@ -1,7 +1,7 @@
 <template>
   <header class="header alignmax">
     <div class="container alignwide">
-      <NuxtLink to="/" class="logo">
+      <NuxtLink to="/" class="logo" aria-label="Home">
         <span class="svg-wrap desktop-icon">
           <nuxt-icon name="logo" filled />
         </span>

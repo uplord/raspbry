@@ -26,11 +26,12 @@
               class: 'primary'
             },{
               icon: 'arrow-right',
+              text: 'How we can help you',
               url: '/',
               class: 'primary'
             }]" />
             <div class="inner-container">
-              <h4>raspbry is a user experience and digital design boutique studio that creates products, services, and experiences for good companies.</h4>
+              <h2 class="h4">raspbry is a user experience and digital design boutique studio that creates products, services, and experiences for good companies.</h2>
             </div>
           </div>
         </div>

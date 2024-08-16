@@ -7,6 +7,7 @@
     type="submit"
     class="button"
     :class="buttonClasses"
+    :aria-label="button.text"
   >
     <span v-if="button.icon" class="svg-wrap">
       <nuxt-icon :name="button.icon" filled />
