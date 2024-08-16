@@ -13,6 +13,20 @@
       <div class="navigation">
         <ul>
           <li>
+            <NuxtLink to="/">Work</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/">Info</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/">Store</NuxtLink>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li>
             <NuxtLink to="mailto:dan@raspbry.design">Lets talk</NuxtLink>
           </li>
         </ul>

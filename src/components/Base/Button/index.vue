@@ -9,7 +9,7 @@
     :class="buttonClasses"
   >
     <span v-if="button.icon" class="svg-wrap">
-      <nuxt-icon :name="button.icon" />
+      <nuxt-icon :name="button.icon" filled />
     </span>
     <span v-else>{{ button.text }}</span>
   </component>

@@ -117,7 +117,62 @@ header {
   }
 
   .navigation {
-    margin-right: left;
+    position: fixed;
+    left: 50%;
+    bottom: 8px;
+    transform: translateX(-50%);
+    background: #101010;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,0.16);
+    border-radius: 27px;
+    padding: 8px;
+    margin-right: auto;
+    margin-right: auto;
+    z-index: 100;
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      list-style: none;
+
+      a:not(.button):not(.link) {
+        position: relative;
+        display: inline-flex;
+        color: #fff;
+        padding: 6px 24px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 19px;
+
+        &:hover, &.active {
+          background: rgba(242,242,242,0.08);
+
+          &:before {
+            opacity: 1;
+          }
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 24px;
+          height: 2px;
+          background: #FD3E81;
+          box-shadow: 0 2px 25px 2px #FD3E81;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .right {
+    margin-left: auto;
 
     ul {
       display: flex;
