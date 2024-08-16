@@ -11,6 +11,10 @@
     gap: 48px;
   }
 
+  .text-wrap {
+    position: relative;
+  }
+
   h1 {
 
     span {
@@ -30,5 +34,29 @@
   h4 {
     max-width: 480px;
     margin-left: 0;
+  }
+  
+  .icon-logo {
+    margin-bottom: -24px;
+
+    @media (min-width: 1241px) {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 740px) {
+      display: none;
+    }
+
+    .svg-wrap {
+      margin-left: 0;
+      width: 56px;
+
+      @media (max-width: 740px) {
+        width: 37px;
+      }
+    }
   }
 }

@@ -14,6 +14,11 @@
           class="text-content"
         >
           <div class="text-wrap inner-container">
+            <div class="icon-logo inner-container">
+              <span class="svg-wrap">
+                <nuxt-icon name="icon" filled />
+              </span>
+            </div>
             <h1>We craft products,<br>interactions & <span>experiences.</span></h1>
             <BaseButtons :buttons="[{
               text: 'How we can help you',
