@@ -33,6 +33,8 @@
             <div class="inner-container">
               <h2 class="h4">raspbry is a user experience and digital design boutique studio that creates products, services, and experiences for good companies.</h2>
             </div>
+
+            <div class="floating-wrap"></div>
           </div>
         </div>
 
