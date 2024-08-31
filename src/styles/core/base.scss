@@ -28,6 +28,10 @@ body {
   }
 }
 
+main {
+  overflow-x: hidden;
+}
+
 svg {
   display: block;
 }
