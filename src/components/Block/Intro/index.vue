@@ -16,6 +16,8 @@
           <p>We see ourselves as your long-term partner – working closely with you for true collaboration, from initial concept to final product. This way, we’re invested in your success.</p>
           <p><a href="">Learn more about our studio</a></p>
         </div>
+
+        <img src="/assets/images/Group 1.svg" class="floating" alt="" />
       </div>
     </div>
   </div>

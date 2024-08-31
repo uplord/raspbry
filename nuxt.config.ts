@@ -29,10 +29,13 @@ export default defineNuxtConfig({
       },
     }
   },
+
   css: [
     '~/styles/main.scss',
   ],
+
   devtools: { enabled: true },
+
   googleFonts: {
     families: {
       "Gloock": [400]
@@ -40,6 +43,7 @@ export default defineNuxtConfig({
     display: "swap",
     preload: true
   },
+
   modules: [
     "nuxt-icons",
     "@nuxt/image",
@@ -47,6 +51,7 @@ export default defineNuxtConfig({
     "@nuxtjs/strapi",
     "@pinia/nuxt",
   ],
+
   image: {
     screens: {
       mobile: 320,
@@ -58,6 +63,7 @@ export default defineNuxtConfig({
       baseURL: process.env.STRAPI_URL || 'http://localhost:1337'
     },
   },
+
   runtimeConfig: {
     public: {
       siteUrl: process.env.SITE_URL || 'http://localhost:3000',
@@ -67,6 +73,8 @@ export default defineNuxtConfig({
       devMode: process.env.DEV_MODE || 'false',
     },
   },
+
   srcDir: "src/",
   ssr: true,
+  compatibilityDate: '2024-08-31',
 })

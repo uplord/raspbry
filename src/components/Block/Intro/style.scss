@@ -21,4 +21,23 @@
     color: var(--header-color);
     text-decoration: underline;
   }
+
+  .floating {
+    position: absolute;
+    bottom: -20%;
+    left: -500px;
+    max-width: initial;
+    width: auto;
+    z-index: -1;
+    transition: all 0.3s;
+
+    @media (min-width: 1241px) {
+      bottom: -20%;
+      left: -320px;
+    }
+
+    @media (max-width: 740px) {
+      display: none;
+    }
+  }
 }

@@ -34,7 +34,7 @@
               <h2 class="h4">raspbry is a user experience and digital design boutique studio that creates products, services, and experiences for good companies.</h2>
             </div>
 
-            <div class="floating-wrap"></div>
+            <img src="/assets/images/Gradient.svg" class="floating" alt="" />
           </div>
         </div>
 
