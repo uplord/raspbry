@@ -24,6 +24,11 @@ export default defineNuxtConfig({
           crossorigin: 'anonymous'
         }
       ],
+      script: [
+        {
+          src: "/scripts/script.js"
+        }
+      ],
       htmlAttrs: {
         lang: "en"
       },

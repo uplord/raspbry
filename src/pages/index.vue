@@ -101,4 +101,8 @@ onMounted(() => {
     observer.observe(el)
   })
 })
+
+useHead({
+  bodyAttrs: { class: 'homepage sticky' }
+})
 </script>
